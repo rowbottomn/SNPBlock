@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+
+    <a-scene log = "SNP Block!" >
+      <a-assets>
+        <a-asset-item id = "object" src = "SNPBlock/tinker.obj"></a-asset-item>
+        <a-asset-item id = "material" src = "SNPBlock/obj.mtl"></a-asset-item>
+      </a-assets>  
+      <a-light type="point" color="white" position="0 5 0"></a-light>
+<!-- Default lighting injected by A-Frame. -->
+<a-entity light="type: ambient; color: #F0F"></a-entity>
+
+      <a-sky color="#bbbbff"></a-sky>
+
+      <a-obj-model id = "SNPBlock" src="#object" mtl="#material" position = " 0  2 -4" scale = "0.015, 0.015, 0.015" rotation = "-90, 0, -45"> <a-animation attribute = "rotation" dur="3000" from ="-90, 0, -45" to= "-90 360 -45" repeat = "indefinite" easing ="linear"></a-animation>
+        </a-obj-model>  
+        
+    </a-scene>
+
+    <script src ="script.js"></script>
+  </body>
+</html>
