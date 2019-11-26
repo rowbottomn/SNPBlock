@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+
+    <a-scene log = "SNP Block!">
+
+      <a-assets>
+        <a-asset-item id = "object" src = "SNPBlock/SNPBlock.obj"></a-asset-item>
+        <a-asset-item id = "material" src = "SNPBlock/SNPBlock.mtl"></a-asset-item>
+      </a-assets>  
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#aaaa00"></a-plane>
+      <a-sky color="#bbbbff"></a-sky>
+
+      <a-obj-model src="#object" mtl="#material" position = " 0  0 -3" scale = "1, 1, 1"></a-obj-model>      
+    </a-scene>
+
+    <script src ="script.js"></script>
+  </body>
+</html>   
+
+
+ 
